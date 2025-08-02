@@ -290,9 +290,11 @@ int main() {
     char filename[256];
     int choice, personId, src, dest;
     
+    char inputName[128];
     printf("Input file path: ");
-    scanf("%s", filename);
-    
+    scanf("%s", inputName);
+    snprintf(filename, sizeof(filename), "data/%s", inputName);
+
     // Read the filename/path directly
     loadGraphFromFile(&graph, filename);
     
