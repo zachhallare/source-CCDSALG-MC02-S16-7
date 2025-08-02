@@ -98,7 +98,7 @@ void loadGraphFromFile(Graph** graph, char* filename) {
     }
     
     fclose(file);
-    printf("Graph loaded successfully!\n");
+    printf("Graph loaded!");
 }
 
 // Display friend list for a given person
